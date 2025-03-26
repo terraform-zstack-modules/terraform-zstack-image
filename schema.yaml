@@ -1,10 +1,68 @@
 openapi: 3.0.3
 info:
-  title: OpenAPI schema for template walrus-template-template
+  title: OpenAPI schema for template .
 components:
   schemas:
     variables:
       type: object
+      required:
+      - image_name
+      properties:
+        image_name:
+          title: Image Name
+          type: string
+          x-walrus-ui:
+            group: Basic
+            order: 2
+        image_url:
+          title: Image Url
+          type: string
+          default: ""
+          x-walrus-ui:
+            group: Basic
+            order: 3
+        guest_os_type:
+          title: Guest Os Type
+          type: string
+          default: ""
+          x-walrus-ui:
+            group: Basic
+            order: 4
+        platform:
+          title: Platform
+          type: string
+          default: ""
+          x-walrus-ui:
+            group: Basic
+            order: 5
+        format:
+          title: Format
+          type: string
+          default: ""
+          x-walrus-ui:
+            group: Basic
+            order: 6
+        architecture:
+          title: Architecture
+          type: string
+          default: ""
+          x-walrus-ui:
+            group: Basic
+            order: 7
+        backup_storage_name:
+          title: Backup Storage Name
+          type: string
+          default: ""
+          x-walrus-ui:
+            group: Basic
+            order: 8
+        create_image:
+          title: Create Image
+          type: boolean
+          default: false
+          x-walrus-ui:
+            group: Basic
+            order: 9
       x-walrus-ui:
         groupOrder:
         - Basic

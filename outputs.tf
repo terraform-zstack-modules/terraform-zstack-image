@@ -32,11 +32,9 @@ output "walrus_resource_id" {
   description = "The id of resource where deployed in Walrus."
 }
 
-#
-# Submodule output
-#
+# modules/zstack-image/outputs.tf
 
-output "submodule" {
-  value       = module.submodule.message
-  description = "The message from submodule."
+output "image_uuid" {
+  value = local.image_uuid
 }
+
