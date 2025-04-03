@@ -1,14 +1,5 @@
 # modules/zstack-image/main.tf
 
-terraform {
-  required_providers {
-    zstack = {
-      source  = "zstack-robot/zstack"
-      version = "1.0.5"
-    }
-  }
-}
-
 locals {
   context = var.context
 }
