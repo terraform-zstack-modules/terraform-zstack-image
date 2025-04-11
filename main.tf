@@ -23,7 +23,7 @@ resource "zstack_image" "image" {
   format      = var.format
   architecture = var.architecture
   backup_storage_uuids = [data.zstack_backupstorages.image_store.backup_storages.0.uuid]
-  boot_mode = "legacy"
+  boot_mode = "Legacy"
   expunge = var.expunge
 }
 
