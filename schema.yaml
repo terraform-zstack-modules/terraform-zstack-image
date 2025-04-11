@@ -63,6 +63,13 @@ components:
           x-walrus-ui:
             group: Basic
             order: 9
+        expunge:
+          title: Expunge
+          type: boolean
+          default: true
+          x-walrus-ui:
+            group: Basic
+            order: 10
       x-walrus-ui:
         groupOrder:
         - Basic

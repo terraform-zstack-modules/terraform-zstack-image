@@ -61,6 +61,7 @@ module "zstack_image" {
   format             = "qcow2"
   architecture       = "x86_64"
   backup_storage_name = "bs"
+  expunge = true
 }
 
 output "image_uuid" {

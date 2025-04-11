@@ -24,6 +24,7 @@ resource "zstack_image" "image" {
   architecture = var.architecture
   backup_storage_uuids = [data.zstack_backupstorages.image_store.backup_storages.0.uuid]
   boot_mode = "legacy"
+  expunge = var.expunge
 }
 
 # 如果 create_image 为 false，查询已有镜像

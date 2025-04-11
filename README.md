@@ -4,13 +4,13 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_zstack"></a> [zstack](#requirement\_zstack) | 1.0.5 |
+| <a name="requirement_zstack"></a> [zstack](#requirement\_zstack) | 1.0.7 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_zstack"></a> [zstack](#provider\_zstack) | 1.0.5 |
+| <a name="provider_zstack"></a> [zstack](#provider\_zstack) | 1.0.7 |
 
 ## Modules
 
@@ -20,9 +20,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [zstack_image.image](https://registry.terraform.io/providers/zstack-robot/zstack/1.0.5/docs/resources/image) | resource |
-| [zstack_backupstorages.image_store](https://registry.terraform.io/providers/zstack-robot/zstack/1.0.5/docs/data-sources/backupstorages) | data source |
-| [zstack_images.existing_image](https://registry.terraform.io/providers/zstack-robot/zstack/1.0.5/docs/data-sources/images) | data source |
+| [zstack_image.image](https://registry.terraform.io/providers/ZStack-Robot/zstack/1.0.7/docs/resources/image) | resource |
+| [zstack_backupstorages.image_store](https://registry.terraform.io/providers/ZStack-Robot/zstack/1.0.7/docs/data-sources/backupstorages) | data source |
+| [zstack_images.existing_image](https://registry.terraform.io/providers/ZStack-Robot/zstack/1.0.7/docs/data-sources/images) | data source |
 
 ## Inputs
 
@@ -32,6 +32,7 @@ No modules.
 | <a name="input_backup_storage_name"></a> [backup\_storage\_name](#input\_backup\_storage\_name) | n/a | `string` | `""` | no |
 | <a name="input_context"></a> [context](#input\_context) | Receive contextual information. When Walrus deploys, Walrus will inject specific contextual information into this field.<br/><br/>Examples:<pre>context:<br/>  project:<br/>    name: string<br/>    id: string<br/>  environment:<br/>    name: string<br/>    id: string<br/>  resource:<br/>    name: string<br/>    id: string</pre> | `map(any)` | `{}` | no |
 | <a name="input_create_image"></a> [create\_image](#input\_create\_image) | n/a | `bool` | `false` | no |
+| <a name="input_expunge"></a> [expunge](#input\_expunge) | n/a | `bool` | `true` | no |
 | <a name="input_format"></a> [format](#input\_format) | n/a | `string` | `""` | no |
 | <a name="input_guest_os_type"></a> [guest\_os\_type](#input\_guest\_os\_type) | n/a | `string` | `""` | no |
 | <a name="input_image_name"></a> [image\_name](#input\_image\_name) | n/a | `string` | n/a | yes |

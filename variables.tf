@@ -66,3 +66,8 @@ variable "create_image" {
   default = false
 }
 
+variable "expunge" {
+  type  = bool
+  default = true
+}
+
