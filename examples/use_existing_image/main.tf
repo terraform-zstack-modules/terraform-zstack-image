@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "zstack" {
-  host             = "172.30.3.3"
+  host             = "x.x.x.x"
   account_name     = "admin"
   account_password = "password"
 }
